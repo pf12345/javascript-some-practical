@@ -13,7 +13,7 @@ html code:
 &lt;div class="modal-popup">
     &lt;div class="arrow-right arrow">&lt/div>
     &lt;div class="content">
-        on the left
+        on the right
     &lt;/div>
 &lt;/div>
 </code>
