@@ -28,3 +28,26 @@ var max = Math.max.apply(Math, arr);
 var min = Math.min.apply(Math, arr);
 </code>
 </pre>
+
+4、判断是否能够使用flash
+
+<pre>
+<code>
+judgeHasFlash = function() {
+        var hasFlash = false;
+        try {
+            var fo = new ActiveXObject('ShockwaveFlash.ShockwaveFlash');
+            if (fo) {
+                hasFlash = true;
+            }
+        } catch (e) {
+            if (navigator.mimeTypes
+                    && navigator.mimeTypes['application/x-shockwave-flash'] != undefined
+                    && navigator.mimeTypes['application/x-shockwave-flash'].enabledPlugin) {
+                hasFlash = true;
+            }
+        }
+        return hasFlash;
+    }
+</code>
+</pre>
