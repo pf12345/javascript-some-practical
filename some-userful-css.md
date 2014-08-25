@@ -107,7 +107,19 @@ css style code:
 </code>
 </pre>
 
-2、element window height(100% height):
+2、element window height and width(100% height or width):
+
+<pre>
+1vw = 1% of viewport width
+
+1vh = 1% of viewport height
+
+1vmin = 1vw or 1vh, whichever is smaller
+
+1vmax = 1vw or 1vh, whichever is larger
+
+</pre>
+
 
 <pre>
 <code>
@@ -115,6 +127,7 @@ css style code:
 
 div {
     height: 100vh;
+	width: 100vw;
 }
 
 </code>
