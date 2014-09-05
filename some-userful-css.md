@@ -132,3 +132,13 @@ div {
 
 </code>
 </pre>
+
+
+3、chrome input autocomplete color change:
+
+<pre>
+input:-webkit-autofill, 
+textarea:-webkit-autofill{
+    -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+}
+</pre>
