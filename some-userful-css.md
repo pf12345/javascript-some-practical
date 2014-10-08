@@ -142,3 +142,22 @@ textarea:-webkit-autofill{
     -webkit-box-shadow: 0 0 0px 1000px #fff inset;
 }
 </pre>
+
+4、chrome scoll bar style change:
+
+<pre>
+::-webkit-scrollbar-track-piece {
+    background-color: #fff;
+    -webkit-border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: #ecedf0;
+    -webkit-border-radius: 10px;
+    border: 1px solid #ecedf0;
+  }
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+</pre>

@@ -51,3 +51,19 @@ judgeHasFlash = function() {
     }
 </code>
 </pre>
+
+5、原生js
+
+<pre>
+1、获取元素高度：
+var ulElement = document.getElementById('right-img-list-ul'),
+    uHeight = ulElement.clientHeight；
+
+2、获取元素外部样式：
+var ulElement = document.getElementById('right-img-list-ul'),
+    uHeight = ulElement.clientHeight；
+    element = ulElement.getElementsByTagName('li')[0],
+    style = element.currentStyle || window.getComputedStyle(element),
+    height = parseInt(element.offsetHeight) + parseInt(style.marginTop);
+
+</pre>
