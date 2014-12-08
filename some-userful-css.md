@@ -161,3 +161,56 @@ textarea:-webkit-autofill{
   }
 
 </pre>
+
+5、在定高div中放置一个img图片(大小不定)的上下居中方式：
+
+<pre>
+(1)
+&lt;div class='frame'&gt;
+    &lt;img src="" alt="" /&gt;
+&lt/div&gt;
+&lt;style&gt;
+   .frame {
+      height: 300px;
+      width: 300px;
+      position: relative;
+   }
+
+   .frame img {
+      postion: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      margin: auto;
+      max-height: 280px;
+      max-width: 280px;
+   }
+
+&lt;/style&gt;
+
+(2)
+&lt;div class='frame'&gt;
+    &lt;div&gt;
+        &lt;img src="" alt="" /&gt;
+    &lt;/div/&gt;
+&lt/div&gt;
+&lt;style&gt;
+   .frame {
+      height: 300px;
+      width: 300px;
+      position: relative;
+      display: table;
+   }
+   .frame > div {
+      display: table-cell;
+      vertical-align: middle;
+   }
+
+   .frame img {
+      max-height: 280px;
+      max-width: 280px;
+   }
+
+&lt;/style&gt;
+</pre>
